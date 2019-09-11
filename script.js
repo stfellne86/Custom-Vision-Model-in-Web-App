@@ -38,6 +38,7 @@ document.getElementById('capture').onchange = function (evt) {
         var xhr = new XMLHttpRequest();
         
         xhr.open('POST', URL, true);
+                //könnte ich mit diesem key und der URL oben, gegen die API feuern? In der Regel sollten solche Informationen nicht im client-seitigen Code liegen, da andere diesen Code relativ einfach sehen können
         xhr.setRequestHeader('Prediction-Key','a6161e29140945db9fdb8a3ae3a9521f');
         xhr.setRequestHeader('Content-Type','application/octet-stream')
    
